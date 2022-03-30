@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<adapters_conf id="PROXY_PYTHON">
+    <adapter_set_pool>
+        <max_size>7</max_size>
+        <max_free>0</max_free>
+    </adapter_set_pool>
+
+    <metadata_provider>
+      <adapter_class>ROBUST_PROXY_FOR_REMOTE_ADAPTER</adapter_class>
+      <classloader>log-enabled</classloader>
+      <param name="request_reply_port">8003</param>
+      <param name="timeout">36000000</param>
+    </metadata_provider>
+    <data_provider name="CHAT_ROOM">
+      <adapter_class>ROBUST_PROXY_FOR_REMOTE_ADAPTER</adapter_class>
+      <classloader>log-enabled</classloader>
+      <data_adapter_pool>
+            <max_size>9</max_size>
+            <max_free>0</max_free>
+      </data_adapter_pool>
+      <param name="request_reply_port">8001</param>
+      <param name="notify_port">8002</param>
+      <param name="timeout">36000000</param>
+    </data_provider>
+</adapters_conf>
+
