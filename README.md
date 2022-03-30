@@ -6,10 +6,8 @@ Here I have implemented a simple demo with Lightstreamer server version 7.2.2 fo
 
 1. Download Lightstreamer:
 
-```
 Please download from here <a href="http://www.lightstreamer.com" rel="nofollow">Lightstreamer</a>
 Then unzip and keep all in a single folder.
-```
 
 2. Clone this repository: 
 
